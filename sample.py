@@ -1,20 +1,16 @@
-'''def repetir_nombre(nombre, veces):
-    for _ in range(veces):
-        print(nombre + " crack")
+# Import the sleep function from the time module, so
+# that the sleep function can be used in this program.
+from time import sleep
 
-# Pedir al usuario su nombre y el número
+# Prompt the user to enter her name.
+name = input("Hello! What is your name? ")
 
-nombre = input("Ingrese su nombre: ")
-numero = int(input("Ingrese un número: "))
+# Print the numbers 3, 2, 1.
+for i in range(2, 0, -1):
+    print(i, flush=True)
+    
+    sleep(0.5)  # Pause for 1/2 second
 
-# Llamar a la función para repetir el nombre
-repetir_nombre(nombre, numero)
-'''
-
-import math
-
-area = int(input("What square root do you need?: "))
-
-squareroot = math.sqrt(area)
-
-print(f"La raiz cuadrada de {area} es {squareroot:.0f}")
+# Use a Python f-string to format a greeting
+# for the user and then print the greeting.
+print(f"Welcome to CSE 111, {name}!")
